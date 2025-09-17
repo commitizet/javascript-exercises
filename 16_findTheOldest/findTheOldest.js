@@ -11,7 +11,7 @@ const findTheOldest = function (arr) {
   });
 
   let oldestAge = arrWithAge.reduce(
-    (max, curr) => (curr.age > max) ? (max = curr.age) : (max = max), 0)
+    (max, curr) => (curr.age > max) ? (max = curr.age) : max, 0)
 
   return arrWithAge.find(obj => obj.age === oldestAge);
 };
