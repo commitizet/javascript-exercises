@@ -4,7 +4,7 @@ const palindromes = function (str) {
     const filteredArr = arrStr.filter(el => el.match(/[a-z0-9]/));
     const cleanedStr = filteredArr.join('');
     const reversedStr = filteredArr.reverse().join('');
-    return (cleanedStr === reversedStr) ? true : false;
+    return cleanedStr === reversedStr;
 };
 
 // Do not edit below this line
