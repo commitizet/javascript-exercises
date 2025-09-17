@@ -19,6 +19,14 @@ const power = function(num1, num2) {
 };
 
 const factorial = function(num) {
+  if (num === 0) return 1;
+
+  let arr = [];
+  for (let i = 1; i <= num; i++){
+    arr.push(i);
+  }
+
+  return multiply(arr);
 };
 
 // Do not edit below this line
